@@ -21,7 +21,32 @@ p {
 
 /* Utility Classes */
 .text-primary {
-  color: #09a39d;
+  color: #11c9ad;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #0b0e1c;
+  background: #11c9ad;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #0b0e1c;
+  color: #11c9ad;
 }
 
 /* Navbar */
@@ -36,6 +61,10 @@ p {
   padding: 1rem;
 }
 
+#navbar .logo {
+  margin-left: 0.5rem;
+}
+
 #navbar ul {
   display: flex;
   align-items: center;
@@ -46,9 +75,34 @@ p {
   color: #fff;
   padding: 0.75rem;
   margin: 0 0.25rem;
+  font-size: 1.3rem;
 }
 
 #navbar ul li a:hover {
-  background: #09a39d;
+  background: #11c9ad;
+  color: #0b0e1c;
   border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+  background: url("/img/showcase.jpeg") no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+}
+
+#showcase .showcase-content .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
 }
