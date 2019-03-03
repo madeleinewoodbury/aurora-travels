@@ -42,7 +42,7 @@ p {
 }
 
 .m-heading {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
@@ -73,16 +73,27 @@ p {
 
 .btn {
   display: inline-block;
-  color: #0b0e1c;
-  background: #11c9ad;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
+  color: #0b0e1c;
+  background: #11c9ad;
 }
 
 .btn:hover {
   background: #0b0e1c;
   color: #11c9ad;
+  border: 1px solid #11c9ad;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem;
+  border-bottom: #444 solid 1px;
 }
 
 /* Navbar */
@@ -187,4 +198,31 @@ p {
 #gallery .gallery-content .img img {
   max-width: 300px;
   border-radius: 0.6rem;
+}
+
+/* Pricing */
+#pricing {
+  background: #253058;
+  color: white;
+}
+#pricing .packages {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+#pricing .packages .package {
+  background: #0b0e1c;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  width: 25%;
+}
+
+#pricing .packages .package h2 {
+  padding-bottom: 0.5rem;
+}
+
+#pricing .packages .package .btn {
+  margin-top: 1rem;
 }
