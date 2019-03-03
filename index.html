@@ -169,36 +169,63 @@
           Our Travel <span class="text-primary">Packages</span>
         </h2>
         <div class="packages py-1">
-          <div class="package">
+          <div id="package-1" class="package">
             <h2>Package 1</h2>
             <ul class="list">
               <li>1 night</li>
-              <li>Bring your own tent</li>
-              <li>$79.00</li>
+              <li>Transportation Provided</li>
+              <li>No Meals Included</li>
+              <li>Bring Your Own Tent</li>
+              <li>$79.00 per person</li>
             </ul>
-            <a href="#" class="btn">Book Now</a>
+            <button class="btn modal-btn">Book Now</button>
           </div>
-          <div class="package">
+          <div id="package-2" class="package">
             <h2>Package 2</h2>
             <ul class="list">
               <li>3 nights</li>
-              <li>Tent provided</li>
-              <li>$179.00</li>
+              <li>Transportation Provided</li>
+              <li>Meals Included</li>
+              <li>Tent Provided</li>
+              <li>$349.00 per tent</li>
             </ul>
-            <a href="#" class="btn">Book Now</a>
+            <button class="btn modal-btn">Book Now</button>
           </div>
-          <div class="package">
+          <div id="package-3" class="package">
             <h2>Package 3</h2>
             <ul class="list">
               <li>5 nights</li>
-              <li>Stay in a warm cabin</li>
-              <li>$379.00</li>
+              <li>Transportation Provided</li>
+              <li>Meals Included</li>
+              <li>Warm Cabin (sleeps 2-3)</li>
+              <li>$579.00 per cabin</li>
             </ul>
-            <a href="#" class="btn">Book Now</a>
+            <button class="btn modal-btn">Book Now</button>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- MODALS -->
+    <!-- Modal: Price Package 1 -->
+    <div class="modal">
+      <div class="container">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="m-heading text-center">
+            <span class="text-primary">Book</span> Package
+            <span id="package-number"></span>
+          </h2>
+          <div class="package-info">
+            <!-- Text created dynamically -->
+          </div>
+          <form id="booking-form">
+            <!-- Booking form goes here -->
+            <button class="btn">Make it Happen</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="/js/main.js"></script>
   </body>
 </html>

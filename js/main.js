@@ -1,0 +1,40 @@
+// Get the modal & modal-content
+let modal = document.querySelector(".modal");
+let modalContent = document.querySelector(".modal-content");
+let closeModal = document.querySelector(".close");
+let bookingForm = document.getElementById("booking-form");
+// Get the buttons that opens the modal
+let modalBtn = document.querySelectorAll(".modal-btn");
+let packNum = document.getElementById("package-number");
+let packageInfo = document.querySelector(".package-info");
+
+// Add event lsitener to modalBtns
+for (let btn of modalBtn) {
+  btn.addEventListener("click", openModal);
+}
+
+modal.addEventListener("click", function(e) {
+  if (e.target.parentElement === modal) {
+    modal.style.display = "none";
+  }
+});
+
+function openModal(e) {
+  let modalId = e.target.parentElement.id;
+  if (modalId === "package-1") {
+    packNum.innerHTML = "1";
+    packageInfo.innerHTML = "<p>This is infor regarding package number 1</p>";
+  } else if (modalId === "package-2") {
+    packNum.innerHTML = "2";
+    packageInfo.innerHTML = "<p>This is infor regarding package number 2</p>";
+  } else if (modalId === "package-3") {
+    packNum.innerHTML = "3";
+    packageInfo.innerHTML = "<p>This is infor regarding package number 3</p>";
+  }
+
+  modal.style.display = "block";
+}
+
+closeModal.onclick = function() {
+  modal.style.display = "none";
+};
