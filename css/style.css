@@ -166,3 +166,25 @@ p {
   border-radius: 50%;
   margin-bottom: 1rem;
 }
+
+/* Gallery */
+#gallery {
+  background: #0b0e1c;
+  color: white;
+  padding-bottom: 2rem;
+}
+#gallery .gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gallery .gallery-content .img {
+  flex: 1;
+  padding-bottom: 1rem;
+}
+
+#gallery .gallery-content .img img {
+  max-width: 300px;
+  border-radius: 0.6rem;
+}
