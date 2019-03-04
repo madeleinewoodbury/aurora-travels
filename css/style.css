@@ -47,6 +47,16 @@ p {
   line-height: 1.1;
 }
 
+.bg-light {
+  background: #253058;
+  color: white;
+}
+
+.bg-dark {
+  background: #0b0e1c;
+  color: white;
+}
+
 .py-1 {
   padding: 1.5rem 0;
 }
@@ -155,10 +165,6 @@ p {
 }
 
 /* Explore */
-#explore {
-  background: #253058;
-  color: white;
-}
 #explore .items {
   display: flex;
   padding: 1.5rem 1rem;
@@ -180,8 +186,6 @@ p {
 
 /* Gallery */
 #gallery {
-  background: #0b0e1c;
-  color: white;
   padding-bottom: 2rem;
 }
 #gallery .gallery-content {
@@ -201,10 +205,6 @@ p {
 }
 
 /* Pricing */
-#pricing {
-  background: #253058;
-  color: white;
-}
 #pricing .packages {
   display: flex;
   justify-content: center;
@@ -270,4 +270,38 @@ p {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+}
+
+#contact .contact-form,
+#contact .map {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#contact .contact-form textarea {
+  border-radius: 5px;
+  height: 5vh;
+}
+
+#contact .contact-form .btn {
+  font-size: 1.1rem;
+  margin-left: 0.75rem;
 }
