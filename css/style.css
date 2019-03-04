@@ -57,6 +57,11 @@ p {
   color: white;
 }
 
+.bg-primary {
+  background: #04a199;
+  color: #fff;
+}
+
 .py-1 {
   padding: 1.5rem 0;
 }
@@ -88,6 +93,11 @@ p {
   border-radius: 5px;
   color: #0b0e1c;
   background: #11c9ad;
+}
+
+.btn-dark {
+  color: #11c9ad;
+  background: #0b0e1c;
 }
 
 .btn:hover {
@@ -283,7 +293,8 @@ p {
 }
 
 #contact .contact-form .form-group {
-  margin: 0.75rem;
+  margin: 1rem;
+  font-size: 1.2rem;
 }
 
 #contact .contact-form label {
@@ -298,10 +309,10 @@ p {
 
 #contact .contact-form textarea {
   border-radius: 5px;
-  height: 5vh;
+  height: 10vh;
 }
 
 #contact .contact-form .btn {
   font-size: 1.1rem;
-  margin-left: 0.75rem;
+  margin-left: 1rem;
 }

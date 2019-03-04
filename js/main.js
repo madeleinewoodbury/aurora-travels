@@ -1,3 +1,6 @@
+//
+// GOOGLE MAP
+//
 // Initialize and add the map
 function initMap() {
   const loc = { lat: 69.653298, lng: 18.961642 };
@@ -8,6 +11,38 @@ function initMap() {
   const marker = new google.maps.Marker({ position: loc, map: map });
 }
 
+//
+// SMOOTH SCROLLING
+//
+$("#navbar a, .btn").on("click", function(e) {
+  if (this.hash !== "") {
+    e.preventDefault();
+
+    const hash = this.hash;
+
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top - 100
+      },
+      800
+    );
+  }
+});
+
+//
+// TRANSPARENT NAVBAR
+//
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 100) {
+    document.querySelector("#navbar").style.opacity = 0.9;
+  } else {
+    document.querySelector("#navbar").style.opacity = 1;
+  }
+});
+
+//
+// MODAL
+//
 // Get the modal & modal-content
 let modal = document.querySelector(".modal");
 let modalContent = document.querySelector(".modal-content");
