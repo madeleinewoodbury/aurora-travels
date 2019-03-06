@@ -29,6 +29,17 @@ $("#navbar a, .btn").on("click", function(e) {
   }
 });
 
+// Scroll to Home when click on title
+$("#brand").on("click", function(e) {
+  const hash = "#home";
+  $("html, body").animate(
+    {
+      scrollTop: $(hash).offset().top - 100
+    },
+    800
+  );
+});
+
 //
 // TRANSPARENT NAVBAR
 //

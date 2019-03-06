@@ -1,0 +1,70 @@
+/* Navbar */
+#navbar {
+  flex-direction: column;
+}
+
+#navbar h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#navbar ul {
+  justify-content: space-between;
+}
+
+/* Showcase */
+#showcase .showcase-content {
+  top: 110px;
+  margin-top: -2rem;
+}
+
+#showcase .showcase-content .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Explore */
+#explore .items {
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+}
+
+/* Gallery */
+#gallery .gallery-content {
+  flex-direction: column;
+}
+
+#gallery .gallery-content .img img {
+  max-width: 100%;
+}
+
+/* Pricing */
+#pricing .packages {
+  flex-direction: column;
+}
+
+#pricing .packages .package {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#pricing .packages .package .btn {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Contact */
+#contact {
+  flex-direction: column;
+}
+
+#contact .map {
+  flex: 1;
+  height: 200px;
+}
+
+@media (max-width: 500px) {
+  #navbar ul li a {
+    font-size: 1rem;
+  }
+}

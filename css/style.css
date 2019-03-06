@@ -121,11 +121,16 @@ p {
   display: flex;
   position: sticky;
   top: 0;
+  overflow: hidden;
   background: #0b0e1c;
   color: #fff;
   justify-content: space-between;
   z-index: 1;
   padding: 1rem;
+}
+
+#navbar #brand {
+  cursor: pointer;
 }
 
 #navbar .logo {
@@ -315,4 +320,10 @@ p {
 #contact .contact-form .btn {
   font-size: 1.1rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 830px) {
+  #navbar #home-tab {
+    display: none;
+  }
 }
