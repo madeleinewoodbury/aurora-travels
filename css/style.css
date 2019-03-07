@@ -287,6 +287,68 @@ p {
   cursor: pointer;
 }
 
+/* Payment form */
+#booking-form .form-list {
+  margin-top: 1.5rem;
+  margin-left: 3.5rem;
+  list-style: none;
+}
+
+#booking-form .form-list .form-list-row {
+  margin: 1rem 0;
+}
+
+#booking-form .form-list .form-list-row label {
+  font-size: 1rem;
+}
+
+#booking-form .form-list .form-list-row input {
+  width: 70%;
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  border: none;
+  display: inline-block;
+  border-bottom: solid 2px #11c9ad;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+#booking-form .card-info {
+  display: flex;
+}
+#booking-form .date .date-input {
+  display: flex;
+}
+#booking-form .date input {
+  width: 1rem;
+  text-align: center;
+}
+
+#booking-form .date .year {
+  margin-left: 1.5rem;
+}
+
+#booking-form .cvc {
+  margin-left: 2rem;
+  text-align: center;
+}
+
+#booking-form .cvc input {
+  width: 70px;
+  text-align: center;
+}
+
+#booking-form .payment-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#booking-form .payment-btn .btn {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
 /* Contact */
 #contact {
   display: flex;
