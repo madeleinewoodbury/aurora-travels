@@ -255,70 +255,48 @@
       <div class="container">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <h2 class="m-heading text-center">
-            <span class="text-primary">Book</span> Package
-            <span id="package-number"></span>
-          </h2>
+          <h2 class="text-center m-heading">Checkout</h2>
+          <div class="package-price">
+            <h3>Package <span id="package-number"></span></h3>
+            <h3 id="package-price"></h3>
+          </div>
+
           <div class="package-info">
             <!-- Text created dynamically -->
           </div>
           <form id="booking-form">
-            <!-- Booking form goes here -->
-            <ul class="form-list">
-              <li class="form-list-row">
-                <div class="user">
-                  <label for="#">Name</label><br />
-                  <input type="text" required />
-                </div>
-              </li>
-              <li class="form-list-row">
-                <div class="number">
-                  <label for="#">Card Number</label><br />
-                  <input type="text" required />
-                </div>
-              </li>
-              <li class="form-list-row">
-                <div class="card-info">
-                  <div class="date">
-                    <label for="#">Expiration Date</label><br />
-                    <div class="date-input">
-                      <input
-                        class="month"
-                        type="text"
-                        required
-                        placeholder="MM"
-                      />
-                      <input
-                        class="year"
-                        type="text"
-                        required
-                        placeholder="YY"
-                      />
-                    </div>
-                  </div>
-                  <div class="cvc">
-                    <div class="cvc-input">
-                      <label for="#">CVC</label><br />
-                      <input type="text" required placeholder="123" />
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-            <!-- <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
+            <h3>Credit Card Details</h3>
+            <div class="form-row">
+              <div class="cardholder">
+                <label for="cardholder">Card Holder</label>
+                <br />
+                <input type="text" placeholder="Enter name on card" />
+              </div>
+              <div class="expiration-date">
+                <label for="date">Expiration Date</label>
+                <br />
+                <input type="number" name="month" id="month" placeholder="MM" />
+                <span> / </span>
+                <input type="number" name="year" id="year" placeholder="YY" />
+              </div>
             </div>
-
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
+            <div class="form-row">
+              <div class="cardnumber">
+                <label for="cardnumber">Card Number</label>
+                <br />
+                <input
+                  type="number"
+                  id="cardnumber"
+                  name="cardnumber"
+                  placeholder="Enter card number"
+                />
+              </div>
+              <div class="cvc">
+                <label for="cvc">CVC</label>
+                <br />
+                <input type="number" name="cvc" id="cvc" placeholder="CVC" />
+              </div>
             </div>
-            <div class="form-group">
-              <label for="card">Card Number</label>
-              <input type="number" id="card" name="card" />
-            </div> -->
             <div class="payment-btn">
               <button class="btn">Make it Happen</button>
             </div>

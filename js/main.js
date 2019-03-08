@@ -62,6 +62,7 @@ let bookingForm = document.getElementById("booking-form");
 // Get the buttons that opens the modal
 let modalBtn = document.querySelectorAll(".modal-btn");
 let packNum = document.getElementById("package-number");
+let packPrice = document.getElementById("package-price");
 let packageInfo = document.querySelector(".package-info");
 
 // Add event lsitener to modalBtns
@@ -79,13 +80,16 @@ function openModal(e) {
   let modalId = e.target.parentElement.id;
   if (modalId === "package-1") {
     packNum.innerHTML = "1";
-    packageInfo.innerHTML = "<p>This is infor regarding package number 1</p>";
+    packPrice.innerHTML = "$79.00";
+    packageInfo.innerHTML = `<p>1 night. Transportation provided. No Meals Included. Bring Your Own Tent</p>`;
   } else if (modalId === "package-2") {
     packNum.innerHTML = "2";
-    packageInfo.innerHTML = "<p>This is infor regarding package number 2</p>";
+    packPrice.innerHTML = "$349.00";
+    packageInfo.innerHTML = `<p>3 nights. Transportation provided. Meals Included. Tent Provided</p>`;
   } else if (modalId === "package-3") {
     packNum.innerHTML = "3";
-    packageInfo.innerHTML = "<p>This is infor regarding package number 3</p>";
+    packPrice.innerHTML = "$579.00";
+    packageInfo.innerHTML = `<p>5 nights. Transportation provided. Meals Included. Warm Cabin (sleeps 2-3)</p>`;
   }
 
   modal.style.display = "block";
