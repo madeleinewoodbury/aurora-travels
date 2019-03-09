@@ -1,0 +1,22 @@
+{
+  "name": "auroratravels",
+  "version": "1.0.0",
+  "description": "A single web page application built with html, css & javascript. This is an example of a UI theme for a travel site.",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madeleinewoodbury/aurora-travels.git"
+  },
+  "author": "Madeleine Woodbury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madeleinewoodbury/aurora-travels/issues"
+  },
+  "homepage": "https://madeleinewoodbury.github.io/aurora-travels",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
