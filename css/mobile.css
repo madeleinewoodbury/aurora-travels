@@ -1,0 +1,217 @@
+/* Navbar */
+#navbar {
+  flex-direction: column;
+}
+
+#navbar h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#navbar ul {
+  justify-content: space-between;
+}
+
+#navbar ul li a {
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  font-size: 1.3rem;
+}
+
+/* Showcase */
+#showcase .showcase-content {
+  top: 110px;
+  margin-top: -2rem;
+}
+
+#showcase .showcase-content .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Explore */
+#explore .items {
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+}
+
+/* Gallery */
+#gallery .gallery-content {
+  flex-direction: column;
+}
+
+#gallery .gallery-content .img img {
+  max-width: 100%;
+}
+
+/* Pricing */
+#pricing .packages {
+  flex-direction: column;
+}
+
+#pricing .packages .package {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#pricing .packages .package .btn {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Contact */
+#contact {
+  flex-direction: column;
+}
+
+#contact .map {
+  flex: 1;
+  height: 200px;
+}
+
+/* Modal */
+.modal-content {
+  width: 100%;
+  height: 95%;
+  padding: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  float: left;
+  font-size: 4rem;
+}
+
+/* Booking Form */
+#booking-form .form-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#booking-form .form-row .cardholder input,
+#booking-form .form-row .cardnumber input {
+  width: 100%;
+}
+
+#booking-form .form-row input {
+  margin: 0.4rem 0;
+  padding: 0.5rem;
+}
+
+#booking-form .payment-btn .btn {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 360px) {
+  .l-heading {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  #navbar ul li a {
+    font-size: 1rem;
+  }
+
+  #showcase .showcase-content .btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  /* Modal */
+  .modal-content h2 {
+    padding-bottom: 0.5rem;
+  }
+
+  .modal-content .package-price {
+    margin: 0.5rem auto;
+  }
+
+  .close {
+    font-size: 3rem;
+  }
+
+  /* Booking Form */
+  #booking-form {
+    margin-top: -20px;
+  }
+
+  #booking-form h3 {
+    border-bottom: 2px solid #11c9ad;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  #booking-form .form-row {
+    margin: 0;
+    padding: 0;
+  }
+
+  #booking-form .form-row input {
+    margin: 0.3rem 0;
+    padding: 0.3rem;
+  }
+
+  #booking-form .payment-btn .btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 550px) {
+  #pricing .packages .package .list {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 600px) and (min-height: 825px) {
+  /* Modal */
+  .modal-content {
+    height: 95%;
+  }
+
+  .modal-content h2 {
+    font-size: 3.3rem;
+    padding-top: 1rem;
+  }
+
+  .modal-content .package-price {
+    font-size: 1.3rem;
+  }
+
+  .modal-content .package-info {
+    font-size: 1.2rem;
+  }
+
+  .close {
+    font-size: 5rem;
+  }
+
+  /* Booking Form */
+  #booking-form h3 {
+    font-size: 1.7rem;
+  }
+
+  #booking-form .form-row label {
+    font-size: 1.3rem;
+  }
+
+  #booking-form .form-row input {
+    margin: 0.6rem 0;
+    padding: 0.8rem;
+  }
+
+  #booking-form .payment-btn .btn {
+    padding: 1.1rem;
+    font-size: 1.3rem;
+    margin-top: -5px;
+  }
+}
