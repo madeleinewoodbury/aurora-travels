@@ -13,7 +13,7 @@
 }
 
 #navbar ul li a {
-  padding: 0.5rem;
+  padding: 0.2rem;
   margin: 0 0.25rem;
   font-size: 1.3rem;
 }
@@ -70,17 +70,33 @@
 }
 
 /* Modal */
+.modal .container {
+  padding: 0;
+  overflow: hidden;
+}
+
 .modal-content {
   width: 100%;
-  height: 95%;
-  padding: 10px;
+  height: 100vh;
+  padding: 1rem 0;
+  border-radius: 0;
+  border: none;
+}
+
+.modal-content h2 {
+  padding-bottom: 0.5rem;
+}
+
+.modal-content .package-info {
+  margin: 0.5rem auto;
+  margin-bottom: 0.5rem;
 }
 
 .close {
   position: absolute;
-  top: 0;
-  float: left;
-  font-size: 4rem;
+  top: -25px;
+  left: 15px;
+  font-size: 5rem;
 }
 
 /* Booking Form */
@@ -96,12 +112,13 @@
 }
 
 #booking-form .form-row input {
-  margin: 0.4rem 0;
+  margin: 0.3rem 0;
   padding: 0.5rem;
 }
 
 #booking-form .payment-btn .btn {
   padding: 1rem;
+  margin-top: 0.5rem;
   font-size: 1rem;
 }
 
@@ -125,6 +142,12 @@
   }
 
   /* Modal */
+  .close {
+    top: -15px;
+    left: 15px;
+    font-size: 4rem;
+  }
+
   .modal-content h2 {
     padding-bottom: 0.5rem;
   }
@@ -133,13 +156,9 @@
     margin: 0.5rem auto;
   }
 
-  .close {
-    font-size: 3rem;
-  }
-
   /* Booking Form */
   #booking-form {
-    margin-top: -20px;
+    margin-top: 0.5rem;
   }
 
   #booking-form h3 {
@@ -175,7 +194,7 @@
 @media (min-width: 600px) and (min-height: 825px) {
   /* Modal */
   .modal-content {
-    height: 95%;
+    height: 100%;
   }
 
   .modal-content h2 {
@@ -189,6 +208,7 @@
 
   .modal-content .package-info {
     font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
 
   .close {
@@ -205,13 +225,13 @@
   }
 
   #booking-form .form-row input {
-    margin: 0.6rem 0;
+    margin: 0.8rem 0;
     padding: 0.8rem;
   }
 
   #booking-form .payment-btn .btn {
     padding: 1.1rem;
     font-size: 1.3rem;
-    margin-top: -5px;
+    margin-top: 1rem;
   }
 }
